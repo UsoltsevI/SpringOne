@@ -5,9 +5,13 @@ This is a project for practicing using Spring Framework (+ Maven) without Spring
 It would be a simple web application with a lot of features
 
 To compile a project after downloading use following command:
-```mvn clean install```
+```
+mvn clean install
+```
 To start an application:
-```java -jar ./target/SpringOne-1.0-SNAPSHOT.jar```
+```
+java -jar ./target/SpringOne-1.0-SNAPSHOT.jar
+```
 
 The section will be finalised later...
 

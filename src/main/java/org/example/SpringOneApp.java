@@ -1,14 +1,21 @@
 package org.example;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Component;
 
-// import org.springframework.context.ApplicationContext;
-// import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-@SpringBootApplication
+@Component
 public class SpringOneApp {
     public static void main(String[] args) {
-        SpringApplication.run(SpringOneApp.class, args);
+        System.out.println("Spring one app main()!\n");
+
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+
+        // try (ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring.xml")) {
+            // Alien alien = (Alien) context.getBean("alien");
+        //     System.out.println("Alien id: " + alien.getId() + ", Alien name: " + alien.getName());
+        // }
+
+        System.out.println("after trying");
     }
 }
