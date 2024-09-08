@@ -5,7 +5,7 @@
 		https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="alien" class="org.example.Alien" scope="singleton">
-        <property name="id" value="1"></property>
-        <property name="name" value="Alien First"></property>
+        <constructor-arg type="int" value="111"/>
+        <constructor-arg typr="java.lang.String" value="first"/>
     </bean>
 </beans>
